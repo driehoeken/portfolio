@@ -1,0 +1,17 @@
+:root {
+    --primary-bg: #fcf8e8;
+}
+body {
+    background-color: var(--primary-bg);
+}
+.circle {
+    position: absolute;
+    width: 40vh;
+    height: 50vh;
+    border-radius: 40% 20% 50% 30%;
+    background: linear-gradient(45deg, #0b404b, #388992, #69dae6);
+    right: 10vw;
+    top: 10vh;
+    filter: blur(20px);
+    transform: rotate(45deg);
+}
