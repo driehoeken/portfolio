@@ -3,6 +3,8 @@
 }
 body {
     background-color: var(--primary-bg);
+    background-image: url("src/grain3.png");
+    margin: 0;
 }
 .circle {
     position: absolute;
@@ -14,4 +16,9 @@ body {
     top: 10vh;
     filter: blur(20px);
     transform: rotate(45deg);
+}
+.grain {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
