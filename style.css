@@ -3,8 +3,9 @@
 }
 body {
     background-color: var(--primary-bg);
-    background-image: url("src/grain6.png");
+    background-image: url("src/grain/grain8.png");
     margin: 0;
+    font-family: "Questrial", sans-serif;
 }
 .circle {
     position: absolute;
@@ -16,9 +17,8 @@ body {
     top: 10vh;
     filter: blur(20px);
     transform: rotate(45deg);
+    z-index: 0;
 }
-.grain {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+section h2 {
+    font-size: 5rem;
 }
