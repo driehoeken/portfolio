@@ -17,8 +17,12 @@ body {
     top: 10vh;
     filter: blur(20px);
     transform: rotate(45deg);
-    z-index: 0;
+    z-index: -1;
 }
-section h2 {
+.section-main h2 {
     font-size: 5rem;
+    margin: 20px 0 0 20px;
+}
+.section-main p {
+    margin-left: 20px;
 }
