@@ -6,8 +6,9 @@ body {
     background-image: url("src/grain/grain8.png");
     margin: 0;
     font-family: "Questrial", sans-serif;
+    overflow: hidden;
 }
-.circle {
+.shape {
     position: absolute;
     width: 40vh;
     height: 50vh;
@@ -19,10 +20,48 @@ body {
     transform: rotate(45deg);
     z-index: -1;
 }
-.section-main h2 {
-    font-size: 5rem;
+section {
+    width: 100vw;
+    height: 100vh;
+}
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #000000 transparent transparent transparent;
+}
+.portfolio-arrow {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    margin-left: 20px;
+}
+.portfolio-arrow .arrow-text {
+    font-size: 1.5rem;
+    margin: 0 0 0 10px;
+}
+.portfolio-arrow .arrow-down {
+    position: relative;
+    top: calc(1.5rem);
+}
+.arrow-down::before {
+    display: block;
+    content: "";
+    border-left: 4px solid rgb(0, 0, 0);
+    height: 50px;
+    width: 1px;
+    position: relative;
+    bottom: 70px;
+    right: 2px;
+}
+.section-main {
+}
+.section-main .main-header {
+    font-size: 7rem;
     margin: 20px 0 0 20px;
 }
-.section-main p {
+.section-main .underheader-text {
     margin-left: 20px;
+    font-size: 2rem;
 }
