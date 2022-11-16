@@ -1,9 +1,50 @@
 :root {
     --primary-bg: #1e1e1e;
+    --primary-font: #ffffff;
+    --red: #e76f51;
+    --green: #2a9d8f;
+    --yellow: #e9c46a;
 }
 body {
     background-color: var(--primary-bg);
     margin: 0;
     font-family: "Questrial", sans-serif;
     overflow: hidden;
+    color: var(--primary-font);
+}
+h1 {
+    margin: 50px 0 0 50px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 5fr 3fr;
+    gap: 10px;
+    width: 800px;
+    height: 500px;
+    margin: 150px auto 0 auto;
+}
+.card {
+    border-radius: 30px;
+}
+.card-portfolio {
+    background-color: var(--red);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.card-aboutme {
+    background-color: var(--green);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.card-contact {
+    background-color: var(--yellow);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
