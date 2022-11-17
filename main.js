@@ -7,12 +7,25 @@ const cardContactText = cardContact.querySelector(".card-text");
 //cardPortfolio
 cardPortfolio.addEventListener("mouseover", () => {
     cardPortfolio.style.width = "800px";
-
     cardAboutme.style.width = "0px";
-
     cardContact.style.width = "0px";
 });
 cardPortfolio.addEventListener("mouseleave", () => {
+    cardPortfolio.style = "";
+    cardAboutme.style = "";
+    cardContact.style = "";
+});
+//cardAboutme
+cardAboutme.addEventListener("mouseover", () => {
+    cardAboutme.style.width = "800px";
+    cardAboutme.style.height = "500px";
+
+    cardPortfolio.style.width = "0px";
+    cardPortfolio.style.height = "0px";
+    cardContact.style.width = "0px";
+    cardContact.style.height = "0px";
+});
+cardAboutme.addEventListener("mouseleave", () => {
     cardPortfolio.style = "";
     cardAboutme.style = "";
     cardContact.style = "";
