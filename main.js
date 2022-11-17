@@ -13,15 +13,9 @@ cardPortfolio.addEventListener("mouseover", () => {
 
     cardContact.style.width = "0px";
     cardContact.style.left = "800px";
-
-    cardAboutmeText.classList.add("card-text-hidden");
-    cardContactText.classList.add("card-text-hidden");
 });
 cardPortfolio.addEventListener("mouseleave", () => {
     cardPortfolio.style = "";
     cardAboutme.style = "";
     cardContact.style = "";
-
-    cardAboutmeText.classList.remove("card-text-hidden");
-    cardContactText.classList.remove("card-text-hidden");
 });
