@@ -9,10 +9,8 @@ cardPortfolio.addEventListener("mouseover", () => {
     cardPortfolio.style.width = "800px";
 
     cardAboutme.style.width = "0px";
-    cardAboutme.style.left = "800px";
 
     cardContact.style.width = "0px";
-    cardContact.style.left = "800px";
 });
 cardPortfolio.addEventListener("mouseleave", () => {
     cardPortfolio.style = "";

@@ -37,7 +37,7 @@ h1 {
     height: 345px;
     width: 495px;
     position: absolute;
-    left: 305px;
+    right: 0;
 }
 .card-contact {
     background-color: var(--yellow);
@@ -45,7 +45,7 @@ h1 {
     width: 495px;
     position: absolute;
     bottom: 0;
-    left: 305px;
+    right: 0;
 }
 .card-text {
     font-size: 42px;
